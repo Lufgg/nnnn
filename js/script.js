@@ -16,6 +16,10 @@ var LEGAL = { privacy: "#", terms: "#", cookies: "#" };
  window.dataLayer=window.dataLayer||[];
  document.addEventListener("click",function(e){var t=e.target.closest("[data-event]");if(t)window.dataLayer.push({event:t.dataset.event});});
  $$("details").forEach(function(d){d.addEventListener("toggle",function(){if(d.open)window.dataLayer.push({event:"faq_open"});});});
+ /* Open the collapsed FAQ / Contact section when a link or URL hash points to it. */
+ function openHash(){var t=location.hash&&document.querySelector(location.hash+" details.faq-all");if(t)t.open=true;}
+ document.addEventListener("click",function(e){var a=e.target.closest('a[href="#faq"],a[href="#contact"]');if(a){var d=document.querySelector(a.getAttribute("href")+" details.faq-all");if(d)d.open=true;}});
+ window.addEventListener("hashchange",openHash);openHash();
  var nav=document.getElementById("nav"),btn=document.getElementById("menu");
  function setMenu(o){nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);btn.textContent=o?"✕":"☰";btn.setAttribute("aria-label",o?"Close menu":"Open menu");}
  btn.addEventListener("click",function(){setMenu(!nav.classList.contains("open"));});
