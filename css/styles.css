@@ -21,7 +21,9 @@ section{padding:30px 0}
 .row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
 header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:12px}
-.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.5rem;text-decoration:none;color:var(--green)}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.45rem;text-decoration:none;color:var(--ink)}
+.logo b{color:var(--green);font-weight:800}
+.logo img{height:44px;width:auto;background:#fff;border-radius:10px;padding:3px}
 nav ul{display:none;list-style:none;margin:0;padding:0;gap:18px}
 nav a{text-decoration:none;font-weight:600;display:inline-block;padding:10px 4px}
 #menu{display:inline-flex;min-height:44px;min-width:44px;align-items:center;justify-content:center;background:none;border:2px solid var(--line);border-radius:10px;color:var(--ink);font-size:1.3rem;cursor:pointer}
