@@ -90,3 +90,5 @@ footer .small{margin-top:32px;padding-top:20px;border-top:1px solid rgba(242,250
 .stores{display:flex;flex-wrap:wrap;gap:12px}
 .mobile-only{display:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.legal{min-height:55vh;padding-top:64px;padding-bottom:64px}

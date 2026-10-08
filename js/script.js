@@ -1,7 +1,8 @@
 /* ---- Configuration: update these when the apps and legal pages are live ---- */
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
 var CONTACT = { email: "fixaplexhomeservices@gmail.com", endpoint: "" }; /* set the support email and the approved form endpoint */
-var LEGAL = { privacy: "#", terms: "#", cookies: "#" };
+var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
+
 
 (function(){
  var ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1), isAndroid = /Android/.test(ua);
