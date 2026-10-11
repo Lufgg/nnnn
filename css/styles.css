@@ -13,10 +13,10 @@ p{margin:0 0 1em;max-width:62ch}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-section{padding:30px 0}
+section{padding:64px 0}
 .alt{background:var(--tint)}
 .lead{color:var(--muted);font-size:1.1rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;text-decoration:none;border:2px solid var(--green);background:var(--green);color:var(--on-green);cursor:pointer;font-size:1rem;font-family:inherit}
+.btn{text-align:center;line-height:1.3;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;text-decoration:none;border:2px solid var(--green);background:var(--green);color:var(--on-green);cursor:pointer;font-size:1rem;font-family:inherit}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
 .row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
 header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
@@ -48,7 +48,7 @@ nav.open a{display:block;padding:11px 0;line-height:1.2}
 .steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 64px;position:relative}
 .steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#0E2A2B;display:grid;place-items:center;font-weight:800}
 .steps h3{margin-bottom:.2em}.steps p{margin:0;color:var(--muted)}
-@media(min-width:1000px){.steps{grid-template-columns:repeat(5,1fr)}.steps li{padding:62px 16px 18px}.steps li::before{top:16px}}
+@media(min-width:1000px){.steps{grid-template-columns:repeat(6,1fr);gap:10px}.steps li{padding:62px 12px 18px}.steps h3{font-size:1.05rem}.steps li::before{top:16px}}
 /* Journey: vertical timeline on small screens, arrow strip on desktop */
 .journey{list-style:none;padding:0;margin:24px 0;counter-reset:j}
 .journey li{counter-increment:j;position:relative;padding:6px 0 22px 52px;font-weight:600;font-size:1.1rem;line-height:1.3}
@@ -76,6 +76,7 @@ details>div{padding:0 18px 6px}
 .faq-all>summary h2{margin:0}
 .faq-all>summary::after{font-size:2rem;color:var(--green)}
 .faq-all>.faq-list{padding:20px 0 0}
+form{display:grid;gap:14px;max-width:520px}
 label{font-weight:600;display:grid;gap:6px}
 input,select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:2px solid var(--line);border-radius:10px;padding:12px;min-height:48px;width:100%}
 .hp{position:absolute;left:-9999px}
@@ -92,3 +93,4 @@ footer .small{margin-top:32px;padding-top:20px;border-top:1px solid rgba(242,250
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .legal{min-height:55vh;padding-top:64px;padding-bottom:64px}
+.ico{display:block;color:var(--green);margin:10px 0 12px}
