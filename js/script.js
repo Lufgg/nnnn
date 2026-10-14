@@ -10,7 +10,7 @@ var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.ht
  $$(".store-ios").forEach(function(a){a.href=APP_LINKS.ios;a.rel="noopener";});
  $$(".store-android").forEach(function(a){a.href=APP_LINKS.android;a.rel="noopener";});
  /* On phones, primary download buttons go straight to the right store; on desktop they jump to the section showing both. */
- if(isIOS||isAndroid){$$("a.dl").forEach(function(a){a.href=isIOS?APP_LINKS.ios:APP_LINKS.android;a.dataset.event=isIOS?"app_download_ios_click":"app_download_android_click";});}
+  if(isIOS||isAndroid){$$("a.dl").forEach(function(a){a.href=isIOS?APP_LINKS.ios:APP_LINKS.android;if(a.dataset.event!=="professional_cta_click")a.dataset.event=isIOS?"app_download_ios_click":"app_download_android_click";});}
  var l=$$("[data-legal]");["privacy","terms","cookies"].forEach(function(k,i){if(l[i])l[i].href=LEGAL[k];});
  if(CONTACT.email){var m=document.getElementById("mail");m.href="mailto:"+CONTACT.email;m.textContent=CONTACT.email;}
  /* Analytics hook: pushes named events only; connect to the approved analytics setup. */
