@@ -114,3 +114,6 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 #why{padding-bottom:20px}
 .journey{margin-bottom:0}
 #professionals{padding-top:10px}
+.row,.stores{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;width:max-content;max-width:100%;gap:12px}
+@media(max-width:560px){.row,.stores{grid-auto-flow:row;grid-auto-columns:auto}}
+.btn-2line{line-height:1.25;padding:10px 28px;min-height:60px;box-shadow:0 4px 0 rgba(0,0,0,.28)}
