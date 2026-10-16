@@ -10,8 +10,9 @@ h1{font-size:clamp(2.4rem,8vw,4.4rem);font-weight:800}
 h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:800}
 h3{font-size:1.2rem;font-weight:600}
 p{margin:0 0 1em;max-width:62ch}
-/* Justified text sitewide; hyphenation keeps word gaps even on narrow screens */
-p,ul.ticks li{text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto}
+p,ul.ticks li{text-align:left;hyphens:none;-webkit-hyphens:none}
+/* Justify only wide, full-width paragraphs; narrow text (phones, cards) stays left-aligned so word gaps stay even */
+@media(min-width:900px){p,ul.ticks li{text-align:justify;text-align-last:left}.card p,.steps p,footer p{text-align:left}}
 #fmsg{text-align:left;hyphens:none}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
