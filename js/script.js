@@ -1,6 +1,6 @@
 /* ---- Configuration: update these when the apps and legal pages are live ---- */
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
-var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp , */ /* set the support email and the approved form endpoint */
+var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "https://formspree.io/f/xzedozrb" }; /* phone / whatsapp , */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
 
 
@@ -35,7 +35,7 @@ var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.ht
   if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)||!f.message.value.trim()){msg.textContent="Please enter your name, a valid email address and a message.";return;}
   if(!CONTACT.endpoint){msg.textContent="The contact form is not connected yet. Please email us instead.";return;}
   msg.textContent="Sending…";
-  fetch(CONTACT.endpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:f.name.value,email:f.email.value,type:f.type.value,message:f.message.value})})
+  fetch(CONTACT.endpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:f.name.value,email:f.email.value,type:f.type.value,message:f.message.value})})
    .then(function(r){if(!r.ok)throw 0;f.reset();msg.textContent="Thanks. Your message has been sent.";window.dataLayer.push({event:"contact_form_submit"});})
    .catch(function(){msg.textContent="Something went wrong. Please try again or email us.";});
  });
