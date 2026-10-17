@@ -1,6 +1,6 @@
 /* ---- Configuration: update these when the apps and legal pages are live ---- */
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
-var CONTACT = { email: "fixaplexhomeservices@gmail.com", endpoint: "" }; /* set the support email and the approved form endpoint */
+var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp , */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
 
 
@@ -12,6 +12,10 @@ var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.ht
  /* On phones, primary download buttons go straight to the right store; on desktop they jump to the section showing both. */
   if(isIOS||isAndroid){$$("a.dl").forEach(function(a){a.href=isIOS?APP_LINKS.ios:APP_LINKS.android;if(a.dataset.event!=="professional_cta_click")a.dataset.event=isIOS?"app_download_ios_click":"app_download_android_click";});}
  var l=$$("[data-legal]");["privacy","terms","cookies"].forEach(function(k,i){if(l[i])l[i].href=LEGAL[k];});
+  /* Support buttons in the FAQ: they link to the contact form until real details are set above. */
+ if(CONTACT.whatsapp){var w=document.getElementById("a-wa");w.href="https://wa.me/"+CONTACT.whatsapp.replace(/\D/g,"");w.target="_blank";w.rel="noopener";}
+ if(CONTACT.phone){document.getElementById("a-call").href="tel:"+CONTACT.phone.replace(/[^\d+]/g,"");}
+ if(CONTACT.email){document.getElementById("a-mail").href="mailto:"+CONTACT.email;}
  if(CONTACT.email){var m=document.getElementById("mail");m.href="mailto:"+CONTACT.email;m.textContent=CONTACT.email;}
  /* Analytics hook: pushes named events only; connect to the approved analytics setup. */
  window.dataLayer=window.dataLayer||[];

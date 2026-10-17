@@ -122,3 +122,23 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 .br-sm{display:inline}
 .btn-2line{line-height:1.25;padding:10px 28px;min-height:60px;box-shadow:0 4px 0 rgba(0,0,0,.28)}
 }
+
+.stores{align-items:center}
+.badge{display:inline-block;line-height:0;justify-self:start}
+.badge img{display:block;height:54px;width:auto}
+
+.pro h3{font-size:1.25rem;margin-top:.2em}
+.pro ul.ticks li{margin-bottom:.7em;padding-left:.2em}
+.pro ul.ticks li::marker{color:var(--green)}
+.pro ul.ticks strong{color:var(--green)}
+
+.assist{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.assist-head{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+.assist-ico{flex:none;width:56px;height:56px;border-radius:50%;background:var(--tint);color:var(--green);display:grid;place-items:center}
+.assist-ico svg{width:28px;height:28px}
+.assist h3{margin:0 0 .2em;color:var(--green)}
+.assist p{margin:0;color:var(--muted);text-align:left}
+.assist-btns{display:flex;flex-wrap:wrap;gap:10px}
+.abtn{flex:1 1 130px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;color:#fff;font-weight:600;text-decoration:none}
+.abtn.wa{background:#168A43}.abtn.call{background:#0B4F3F}.abtn.mail{background:#1F5FBF}
+.abtn:hover{filter:brightness(1.1)}
