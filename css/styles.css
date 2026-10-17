@@ -125,7 +125,7 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 
 .stores{align-items:center}
 .badge{display:inline-block;line-height:0;justify-self:start}
-.badge img{display:block;height:54px;width:auto}
+.badge img{display:block;height:54px;width:auto;border-radius:12px}
 
 .pro h3{font-size:1.25rem;margin-top:.2em}
 .pro ul.ticks li{margin-bottom:.7em;padding-left:.2em}
