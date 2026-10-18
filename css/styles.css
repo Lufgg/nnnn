@@ -142,3 +142,6 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 .abtn{flex:1 1 130px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;color:#fff;font-weight:600;text-decoration:none}
 .abtn.wa{background:#168A43}.abtn.call{background:#0B4F3F}.abtn.mail{background:#1F5FBF}
 .abtn:hover{filter:brightness(1.1)}
+
+.btn{gap:10px}
+.btn svg{flex:none;width:22px;height:22px}
