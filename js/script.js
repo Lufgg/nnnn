@@ -1,6 +1,6 @@
 /* ---- Configuration: update these when the apps and legal pages are live ---- */
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
-var CONTACT = { email: "", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp in international format, e.g. +353871234567 */ /* set the support email and the approved form endpoint */
+var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp in international format, */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
 
 (function(){
