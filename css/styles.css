@@ -145,3 +145,10 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 
 .btn{gap:10px}
 .btn svg{flex:none;width:22px;height:22px}
+
+.card .btn{padding:0 16px;gap:8px;font-size:.95rem}
+.card .btn svg{width:20px;height:20px}
+/* Service cards: buttons line up at the bottom, and fill the card on desktop where cards are narrow */
+#services .card{display:flex;flex-direction:column}
+#services .card .btn{margin-top:auto;align-self:flex-start}
+@media(min-width:1000px){#services .card .btn{align-self:stretch}}

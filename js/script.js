@@ -6,7 +6,7 @@ var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.ht
 (function(){
  var ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1), isAndroid = /Android/.test(ua);
  function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s));}
- /* Mobile menu first, so it keeps working even if something further down fails */
+ /* Mobile menu  */
  var nav=document.getElementById("nav"),btn=document.getElementById("menu");
  if(nav&&btn){
  var setMenu=function(o){nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);btn.textContent=o?"✕":"☰";btn.setAttribute("aria-label",o?"Close menu":"Open menu");};
