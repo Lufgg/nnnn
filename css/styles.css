@@ -132,7 +132,7 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 .pro ul.ticks li::marker{color:var(--green)}
 .pro ul.ticks strong{color:var(--green)}
 
-.assist{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.assist{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
 .assist-head{display:flex;gap:14px;align-items:center;margin-bottom:16px}
 .assist-ico{flex:none;width:56px;height:56px;border-radius:50%;background:var(--tint);color:var(--green);display:grid;place-items:center}
 .assist-ico svg{width:28px;height:28px}
