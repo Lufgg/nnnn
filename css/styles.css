@@ -152,3 +152,11 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 #services .card{display:flex;flex-direction:column}
 #services .card .btn{margin-top:auto;align-self:flex-start}
 @media(min-width:1000px){#services .card .btn{align-self:stretch}}
+
+/* Social buttons in the support card */
+.assist-social-label{margin:20px 0 10px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-weight:600;font-size:.95rem}
+.assist-social{display:flex;flex-wrap:wrap;gap:10px}
+.abtn.fb{background:#1A5FB4}
+.abtn.ig{background:linear-gradient(45deg,#D6336C,#7B2FBE)}
+.abtn.tt{background:#111;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.abtn.lin{background:#0A66C2}

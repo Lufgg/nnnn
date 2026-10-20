@@ -2,6 +2,7 @@
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
 var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp in international format, */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
+var SOCIAL = { facebook: "https://www.facebook.com/share/1CEus5at6U/?mibextid=wwXIfr", instagram: "https://www.instagram.com/fixaplexhomeservices?cplk=MTJpY3pkd2lzNno5NA%3D%3D&utm_source=qr", tiktok: "https://www.tiktok.com/@fixaplexhomeservices?_r=1&_t=ZN-9AiecXRqe8M", linkedin: "https://www.linkedin.com/company/fixaplex/" }; 
 
 (function(){
  var ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1), isAndroid = /Android/.test(ua);
@@ -21,6 +22,7 @@ var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.ht
  /* Support buttons in the FAQ: they link to the contact form until real details are set above. */
  var w=document.getElementById("a-wa");if(CONTACT.whatsapp&&w){w.href="https://wa.me/"+CONTACT.whatsapp.replace(/\D/g,"");w.target="_blank";w.rel="noopener";}
  var ac=document.getElementById("a-call");if(CONTACT.phone&&ac){ac.href="tel:"+CONTACT.phone.replace(/[^\d+]/g,"");}
+  Object.keys(SOCIAL).forEach(function(k){var a=document.getElementById("s-"+k),u=(SOCIAL[k]||"").trim();if(a&&u){if(!/^https?:\/\//i.test(u))u="https://"+u.replace(/^\/+/,"");a.href=u;a.target="_blank";a.rel="noopener noreferrer";}});
  var am=document.getElementById("a-mail");if(CONTACT.email&&am){am.href="mailto:"+CONTACT.email;}
  var m=document.getElementById("mail");if(CONTACT.email&&m){m.href="mailto:"+CONTACT.email;m.textContent=CONTACT.email;}
  /* Analytics hook: pushes named events only; connect to the approved analytics setup. */
