@@ -1,6 +1,6 @@
 /* ---- Configuration: update these when the apps and legal pages are live ---- */
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
-var CONTACT = { email: "support@fixaplex.ie", phone: "", whatsapp: "", endpoint: "" }; /* phone / whatsapp in international format, */ /* set the support email and the approved form endpoint */
+var CONTACT = { email: "support@fixaplex.ie", phone: "+353892756492", whatsapp: "+353892756492", endpoint: "" }; /* phone / whatsapp in international format, */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
 var SOCIAL = { facebook: "https://www.facebook.com/share/1CEus5at6U/?mibextid=wwXIfr", instagram: "https://www.instagram.com/fixaplexhomeservices?cplk=MTJpY3pkd2lzNno5NA%3D%3D&utm_source=qr", tiktok: "https://www.tiktok.com/@fixaplexhomeservices?_r=1&_t=ZN-9AiecXRqe8M", linkedin: "https://www.linkedin.com/company/fixaplex/" }; 
 
