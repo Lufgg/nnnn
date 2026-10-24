@@ -162,8 +162,8 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 .abtn.lin{background:#0A66C2}
 
 .hero-bg{padding:44px 0 60px;color:#fff;background:
- linear-gradient(90deg,rgba(7,30,28,.62) 0%,rgba(7,30,28,.15) 75%),
- linear-gradient(180deg,rgba(7,30,28,.45) 0%,rgba(7,30,28,.78) 100%),
+ linear-gradient(90deg,rgba(7,30,28,.62) 0%,rgba(7,30,28,.15) 68%),
+ linear-gradient(180deg,rgba(7,30,28,.05) 0%,rgba(7,30,28,.28) 100%),
  url("../img/hero.jpeg") center 28%/cover no-repeat,
  linear-gradient(135deg,#0B4F3F 0%,#0C1B1C 100%)}
 .hero-bg .hero{padding-top:0;padding-bottom:0}
