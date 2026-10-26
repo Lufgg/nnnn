@@ -2,7 +2,7 @@
 var APP_LINKS = { ios: "https://apps.apple.com/", android: "https://play.google.com/" };
 var CONTACT = { email: "support@fixaplex.ie", phone: "+353892756492", whatsapp: "+353892756492", endpoint: "" }; /* phone / whatsapp in international format, */ /* set the support email and the approved form endpoint */
 var LEGAL = { privacy: "privacy.html", terms: "terms.html", cookies: "cookies.html" };
-var SOCIAL = { facebook: "https://www.facebook.com/share/1CEus5at6U/?mibextid=wwXIfr", instagram: "https://www.instagram.com/fixaplexhomeservices?cplk=MTJpY3pkd2lzNno5NA%3D%3D&utm_source=qr", tiktok: "https://www.tiktok.com/@fixaplexhomeservices?_r=1&_t=ZN-9AiecXRqe8M", linkedin: "https://www.linkedin.com/company/fixaplex/" }; 
+var SOCIAL = { facebook: "https://www.facebook.com/share/1FFH2k5hmc/?mibextid=wwXIfr", instagram: "https://www.instagram.com/fixaplexhomeservices?cplk=MTJpY3pkd2lzNno5NA%3D%3D&utm_source=qr", tiktok: "https://www.tiktok.com/@fixaplexhomeservices?_r=1&_t=ZN-9AiecXRqe8M", linkedin: "https://www.linkedin.com/company/fixaplex/" }; 
 
 (function(){
  var ua = navigator.userAgent, isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1), isAndroid = /Android/.test(ua);
