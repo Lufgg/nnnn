@@ -176,3 +176,13 @@ footer .small{max-width:none;margin-top:32px;padding-top:20px;border-top:1px sol
 /* Service card photos: full-width image at the top of each card */
 #services .card{overflow:hidden;padding-top:0}
 .svc-img{display:block;width:calc(100% + 44px);max-width:none;height:auto;aspect-ratio:8/5;object-fit:cover;object-position:50% 15%;margin:0 -22px 18px}
+
+
+.legal-body{max-width:78ch;margin:8px 0 36px}
+.legal-body p,.legal-body li{text-align:left;hyphens:none}
+.legal-body h2{font-size:clamp(1.3rem,3.4vw,1.7rem);margin:1.8em 0 .5em}
+.legal-body h3{font-size:1.1rem;margin:1.4em 0 .4em;color:var(--green)}
+.legal-body ul,.legal-body ol{padding-left:1.3em;margin:0 0 1em}
+.legal-body li{margin-bottom:.4em}
+.legal-body li p{margin:0}
+.legal-body a{color:var(--green);overflow-wrap:anywhere}
